@@ -6,7 +6,7 @@ export const NavbarContainer = styled.div`
     padding-top: 3.5vh;
     padding-left: 8.5vw;
     padding-right:8.5vw;
-    padding-bottom: 3vh;
+    padding-bottom: 3.5vh;
 
     background-color: #185392E5;
 
@@ -14,6 +14,7 @@ export const NavbarContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    align-items: center;
 `;
 
 export const BackImage = styled.img`
