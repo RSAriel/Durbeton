@@ -6,6 +6,7 @@ import { GlobalStyle } from './styles/global';
 
 import { Home } from './pages';
 import { Footer } from './pages/footer';
+import { Services } from './pages';
 
 function App() {
   return (
