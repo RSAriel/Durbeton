@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, HeaderContainer, MeetUs, OverlayImage, ScrollImage, ServicesContainer, Text1, Text2, Text3 } from './styles';
+import { Container, HeaderContainer, MeetUs, OverlayImage, ScrollImage, MeetDurbetonContainer, Text1, Text2, Text3 } from './styles';
 import { Overlay, ScrollDown } from '../../assets';
 
-export const Services: React.FC = () => {
+export const Header: React.FC = () => {
     return (
         <Container>
             <HeaderContainer>
@@ -11,7 +11,7 @@ export const Services: React.FC = () => {
                 </Text3>
                 <ScrollImage src={ScrollDown} alt=""/>
             </HeaderContainer>
-            <ServicesContainer>
+            <MeetDurbetonContainer>
                 <Text1>
                     <MeetUs>
                         Conheça a Durbeton!
@@ -24,7 +24,7 @@ export const Services: React.FC = () => {
                     </Text2>
                 </Text1>
                 <OverlayImage src= {Overlay} alt=""/>
-            </ServicesContainer>
+            </MeetDurbetonContainer>
         </Container>
     );
 }

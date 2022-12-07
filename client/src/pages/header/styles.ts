@@ -38,7 +38,7 @@ export const ScrollImage = styled.img`
     margin-top: 3.8vh;
 `;
 
-export const ServicesContainer = styled.div`
+export const MeetDurbetonContainer = styled.div`
     width: 100vw;
     height: 76.4vh;
     padding-top: 8vh;
