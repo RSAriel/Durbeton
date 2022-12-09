@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 
 export const CasesContainer = styled.div`
-	width: 100vw;
+	width: 100%;
 	height: 76.9vh;
+
 	padding-top: 10.9vh;
 	padding-left: 7.3vw;
 	padding-right:3.4vw;
 	padding-bottom: 6.8vh;
+
 	background-color: #FDFDFD;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -33,7 +36,7 @@ export const OurCases = styled.p`
 `;
 
 export const Bar = styled.div`
-	width: 23.5vh;
+	width: 32vh;
 	height: 4px;
 	margin-bottom: 2.1vh;
 	background-color: #185392;

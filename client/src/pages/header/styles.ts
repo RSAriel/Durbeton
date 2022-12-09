@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { HeaderImage } from '../../assets';
 
 export const Container = styled.div`
-
+    
 `;
 
 export const HeaderContainer = styled.div`
     background-image: url(${HeaderImage});
     background-repeat: no-repeat;
     background-size: 100vw 67.8vh;
-    width: 100vw;
+    width: 100%;
     height: 67.8vh;
 
     display: flex;
@@ -39,7 +39,7 @@ export const ScrollImage = styled.img`
 `;
 
 export const MeetDurbetonContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 76.4vh;
     padding-top: 8vh;
     padding-left: 7.3vw;

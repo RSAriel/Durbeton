@@ -4,7 +4,7 @@ export const ServicesContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 22vw; 
-    height: 41vh; 
+    height: 35vh; 
     background: #185392;
 
     img {

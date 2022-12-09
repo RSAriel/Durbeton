@@ -51,7 +51,7 @@ p {
 `;
 
 export const FooterDiv2 = styled.div `
-    width: 100vw;
+    width: 100%;
     height: 36.7vh ;
     display:flex;
     align-items:center;
