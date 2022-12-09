@@ -6,6 +6,7 @@ import Enviar from './enviar.png';
 import Overlay from './overlay.png';
 import HeaderImage from './headerImage.png';
 import ScrollDown from './scrollDown.png';
+import SliderImage from './sliderImage.png';
 
 export {
     LogoCITi,
@@ -15,5 +16,6 @@ export {
     Enviar,
     Overlay,
     HeaderImage,
-    ScrollDown
+    ScrollDown,
+    SliderImage
 };
