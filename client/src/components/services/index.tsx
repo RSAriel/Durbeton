@@ -1,5 +1,4 @@
 import React from "react";
-import { setSyntheticLeadingComments } from "typescript";
 import { ServicesContainer } from "./styles";
 import { ServicesTitle } from "./styles";
 import { ServicesDescription } from "./styles";

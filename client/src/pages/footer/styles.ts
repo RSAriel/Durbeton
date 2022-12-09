@@ -15,7 +15,6 @@ export const FooterContainer = styled.footer `
     height: 44.5vh;
     background-color:#185392;
 
-
     p {
         margin: 0;
 	    padding: 0;

@@ -8,13 +8,12 @@ import { Home } from './pages';
 import { Navbar } from './pages';
 import { Services } from './pages';
 import { Footer } from './pages/footer';
-
+import { Form } from './pages/form';
 function App() {
   return (
     <html>
-      <Navbar/>
-      <Services/>
-      <Footer/>
+      <Form/>
+      
     </html>
   );
 }
