@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 
 export const NavbarContainer = styled.div`
-    width: 100vw;
+    width: 100%;
+    height: 11.7vh;
+    
     padding-top: 3.5vh;
     padding-left: 8.5vw;
     padding-right:8.5vw;
@@ -42,7 +44,7 @@ export const PageSections = styled.div`
 `;
 
 export const Contact = styled.div`
-    width: 10vw;
+    width: 11vw;
     
     display: flex;
     justify-content: space-between;

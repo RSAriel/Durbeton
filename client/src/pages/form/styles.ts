@@ -2,6 +2,19 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
+    width: 100%;
+
+    background-color: #FFFFFF;
+    background: linear-gradient(360deg, #185392 -71.85%, rgba(217, 217, 217, 0) 58.52%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+`;
+
+export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 60.9vw; 
@@ -62,7 +75,7 @@ export const InputB = styled.input`
 export const InputL = styled.input`
     
     all: unset;
-    width: 47.1%;
+    width: 46%;
     ::placeholder{
     font-family: Poppins;
     font-style: normal;

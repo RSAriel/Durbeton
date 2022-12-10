@@ -8,11 +8,18 @@ import { Navbar } from './pages';
 import { Services } from './pages';
 import { Footer } from './pages/footer';
 import { Form } from './pages/form';
+import { Header } from './pages/header';
+import { Cases } from './pages/cases';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Home/>
+      <Navbar/>
+      <Header/>
+      <Services/>
+      <Cases/>
+      <Form/>
+      <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
   );
