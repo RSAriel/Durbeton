@@ -3,23 +3,34 @@ import styled from "styled-components";
 export const ServicesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 22vw; 
-    height: 35vh; 
+    width: 27.8%; 
+    height: 122%; 
     background: #185392;
-
+    border-radius: 2px;
     img {
         width: 24px;
-        height: 30px;
+        height: 30px;  
+    }
+    padding: 3.75% 4.912% 0 4%;  
 
-        margin: 7vh 0 0 3.2vw ;
+    @media (min-height: 700px) {
+        width: 27.8%; 
+        height: 170%; 
+    }
+
+    @media (max-width: 900px) {
+        width: 58%;
+        height: 200%;
+        margin-bottom: 8%;
     }
 
     ;
 `;
 
+
 export const ServicesTitle = styled.h1`
     display: inline-block;
-    margin: 3.5vh 0 2.6vh 3.2vw ;
+    
     padding: 0;
     border: 0;
     
@@ -29,11 +40,13 @@ export const ServicesTitle = styled.h1`
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF; 
+    margin-top: 9%
+    
 
 `;
 
 export const ServicesDescription = styled.p`
-    margin: 0 3.8vw 0 3.2vw; ;
+ 
     padding: 0;
     border: 0;
     color: #FFFFFF; 
@@ -44,5 +57,14 @@ export const ServicesDescription = styled.p`
     font-size: 12px;
     line-height: 18px;
     color: #FFFFFF;  
+    margin-top: 6%;
+
+    @media (min-height: 700px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 900px) {
+        margin-bottom: 10%;
+
 
 `;
