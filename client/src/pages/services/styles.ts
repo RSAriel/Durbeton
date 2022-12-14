@@ -22,7 +22,6 @@ export const Container = styled.div`
     }
 `;
 
-
 export const Bar = styled.div`
 	width: 18em;
 	height: 4px;
@@ -58,16 +57,5 @@ export const ServicesContainer = styled.div `
         flex-direction: column;
         align-items: center;
     }
-
-    
+  
 `;
-
-
-/* export const Boxes = styled.div `
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 7vw;
-    margin-right: 7vw;
-
-`; */

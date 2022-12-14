@@ -36,9 +36,9 @@ export const OurCases = styled.p`
 `;
 
 export const Bar = styled.div`
-	width: 32vh;
+	width: 15.08em;
 	height: 4px;
-	margin-bottom: 2.1vh;
+	margin-bottom: 16px;
 	background-color: #185392;
 	border-radius: 2px;
 `;

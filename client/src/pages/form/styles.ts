@@ -25,8 +25,6 @@ export const FormContainer = styled.div`
     border-radius: 2px;
 `;
 
-//width: 60.9vw; 
-//height: 69vh;
 
 export const Title = styled.h1`
     
@@ -100,7 +98,6 @@ export const InputL = styled.input`
     box-sizing: border-box;
    } 
 `
-//margin-right: 2.32vw;
 
 export const InputR = styled.input`
     

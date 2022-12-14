@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
                     <li><Sec href="#home">Home</Sec></li>
                     <li><Sec href="#aboutus">Sobre Nós</Sec></li>
                     <li><Sec href="#services">Serviços</Sec></li>
-                    <li><Sec href="#portfolio">Portifólio</Sec></li>
+                    <li><Sec href="#portfolio">Portfólio</Sec></li>
                 </ul>
             </PageSections>
             <Contact className="menu">
@@ -24,8 +24,7 @@ export const Navbar: React.FC = () => {
                     <li><Sec href="#contact">Fale Conosco</Sec></li>
                     <li><Sec href="#contact"><Arrow src={RightArrow} alt="Seta" /></Sec></li>
                 </ul>
-            </Contact>
-                
+            </Contact>         
         </NavbarContainer>
     );
 }

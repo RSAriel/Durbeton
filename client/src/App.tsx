@@ -27,7 +27,7 @@ function App() {
 
   function scrollToIdOnClick(event: { preventDefault: () => void; target: any; }) {
     event.preventDefault();
-    const to = getScrollTopByHref(event.target) - 30;
+    const to = getScrollTopByHref(event.target) - 120;
     scrollToPosition(to);
   }
 
