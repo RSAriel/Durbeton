@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-
+    height: auto;
     background-color: #FFFFFF;
     background: linear-gradient(360deg, #185392 -71.85%, rgba(217, 217, 217, 0) 58.52%);
 
@@ -17,15 +17,16 @@ export const Container = styled.div`
 export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 60.9vw; 
-    height: 61.5vh; 
+    width: 75%;
+    height: 80%;
     background: #185392;
     margin: 5.5vh 13.9vw 8.8vh 13.9vw; 
-    padding: 4.54% 5.1vw 2.6vh 5.1vw;
+    padding: 4.54% 5.1vw 3% 5.1vw;
     border-radius: 2px;
 `;
 
-
+//width: 60.9vw; 
+//height: 69vh;
 
 export const Title = styled.h1`
     
@@ -94,9 +95,9 @@ export const InputL = styled.input`
     
     color: #FFFFFF;
 
-   @media (max-width: 1280px){
-    margin-right: 3%;
-
+   @media (max-width: 900px){
+    width: 100%;
+    box-sizing: border-box;
    } 
 `
 //margin-right: 2.32vw;
@@ -119,6 +120,11 @@ export const InputR = styled.input`
     border-bottom: 1px solid #FFFFFF;
     margin-bottom: 5.7vh;
     color: #FFFFFF;
+
+    @media (max-width: 900px){
+        width: 100%;
+        box-sizing: border-box;
+       } 
 
 `
 export const Button = styled.div`
