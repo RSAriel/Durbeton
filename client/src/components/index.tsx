@@ -1,7 +1,7 @@
 import { ServicesBox } from "./services";
-import { Slider } from "./cases";
+import { SliderComponent } from "./cases";
 
 export {
     ServicesBox,
-    Slider
+    SliderComponent
 }

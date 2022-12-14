@@ -6,15 +6,15 @@ export const CasesContainer = styled.div`
 	height: 76.9vh;
 
 	padding-top: 10.9vh;
-	padding-left: 7.3vw;
-	padding-right:3.4vw;
+	padding-left: 6%;
+	padding-right:3%;
 	padding-bottom: 6.8vh;
 
 	background-color: #FDFDFD;
 	
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-content: center;
 	align-items: center;
 `;
@@ -25,12 +25,12 @@ export const OurCasesContainer = styled.div`
 `;
 
 export const OurCases = styled.p`
-	width: 26.9vw;
+	width: 85%;
 	height: 4.4vh;
 	font-family: 'Anybody';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 4.2vh;
+	font-size: 2rem;
 	line-height: 4.3vh;
 	color: #185392;
 `;
@@ -44,12 +44,12 @@ export const Bar = styled.div`
 `;
 
 export const Text = styled.p`
-	width: 34.7vw;
+	width: 85%;
 	margin-top: 3.1vh;
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 24px;
 	color: #000000;
 `;

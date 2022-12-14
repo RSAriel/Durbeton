@@ -1,79 +1,58 @@
 import styled from "styled-components";
 
-export const SliderContainer = styled.section`
-	width: 52.8vw;
+
+export const Box = styled.div`
+	width: 60%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-`;
 
-export const LeftArrow = styled.div`
-	width: 2.9vw;
-	height: 2.9vw;
-	margin-right: 1.2vw;
-`;
+	.swiper-pagination-bullet{
+		width: 31px;
+		height: 7px;
+		border-radius: 3.5px;
 
-export const RightArrow = styled.div`
-	width: 2.9vw;
-	height: auto;
-	margin-left: 1.2vw;
-`;
-
-export const SlidesContainer = styled.div`
-	width: 44.7vw;
-	height: 59.2vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-`;
-
-export const Slides = styled.div`
-	width: 44.7vw;
-	height: 59.2vh;
-	display: flex;
-	flex-direction: row;
-	overflow: hidden;
-`;
-
-export const Slide = styled.div`
-	img{
-		width: 44.7vw;
-		height: 59.2vh;
-		position: relative;
+		background-color: #D9D9D9;
+		opacity: 1;
+		transition: 0.5s;
 	}
-`;
 
-export const SlideBar = styled.div`
-	width: 9.7vw;
-	height: 0.9vh;
-	margin-top: 5.7vh;
-	display: flex;
-	flex-direction: row;
-	input{
-		display: none;
-	}
-`;
+	.swiper-pagination-bullet-active{
+		width: 58px;
+		height: 7px;
+		border-radius: 3.5px;
 
-export const Bar = styled.label`
-	width: 2.3vw;
-	height: 0.9vh;
-	
-	background-color: #D9D9D9;
-	border-radius: 6.5px;
-	:not(:last-child){
-		margin-right: 0.4vw;
-	}
-	
-	cursor: pointer;
-	transition: 1s;
-	:hover{
-		width: 4.3vw;
 		background-color: #185392;
+		opacity: 1;
+		transition: 0.5s;
 	}
-	:checked{
-		width: 4.3vw;
-		background-color: #185392
+
+	.swiper-pagination {
+		position: relative;
+		bottom: 0;
 	}
 `;
+
+export const SliderButton = styled.div`
+	width: 40px;
+	height: 40px;
+	margin: 15px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	color: #185392;
+
+	cursor: pointer;
+`;
+
+export const Slide = styled.img`
+	width: 100%;
+	height: 100%; 
+
+	border-radius: 5px;
+`;
+

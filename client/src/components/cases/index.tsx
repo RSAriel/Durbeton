@@ -1,40 +1,67 @@
 import React from "react";
-import { setSyntheticLeadingComments } from "typescript";
-import { SliderContainer, Slides, SlidesContainer, SlideBar, Bar, Slide } from "./styles";
-import { CITi, LogoCITi, SliderImage } from "../../assets"
+import { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-type SliderProps = {
-	slide1: URL;
-	slide2: URL;
-	slide3: URL;
-}
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper as SwiperCore} from 'swiper/types';
+import 'swiper/css/pagination';
 
-export const Slider: React.ElementType= ({slide1, slide2, slide3}: SliderProps) => (
-	<SliderContainer>
+import { Box, Slide, SliderButton } from "./styles";
+import { SliderImage } from "../../assets";
+import { Pagination } from "swiper";
 
-		<SlidesContainer>
+
+export const SliderComponent : React.ElementType= () => {
+
+	const swiperRef = React.useRef<SwiperCore>();
+
+	/*const [number, setNumber] = useState(1);
+	
+	const prevSlide = () => {
+		if (number > 1){
+			setNumber((prevNumber) => prevNumber - 1);
+		} else {
+			setNumber(1);
+		}
+	}
+
+	const nextSlide = () => {
+		if (number < 3){
+			setNumber((prevNumber) => prevNumber + 1);
+		} else {
+			setNumber(3);
+		}
+	}*/
+	
+
+
+	return(
+		<Box>
+			<SliderButton onClick={() => swiperRef.current?.slidePrev()}>
+				<FaChevronLeft size={25}/>
+			</SliderButton>
 			
-			<Slides> 
+			
+			<Swiper
+				modules={[Pagination]}
+				spaceBetween={10}
+				slidesPerView={1}
+				pagination={{ clickable: true }}
+				onBeforeInit={(swiper) =>{
+					swiperRef.current = swiper;
+				}}
+			>
+			
+			<SwiperSlide> <Slide src={SliderImage} alt="" /> </SwiperSlide>
+			<SwiperSlide> <Slide src={SliderImage} alt="" /> </SwiperSlide>
+			<SwiperSlide> <Slide src={SliderImage} alt="" /> </SwiperSlide>
+			</Swiper>
 
-				<Slide> <img id="image1" src={SliderImage} alt=""/> </Slide>
-				<Slide> <img id="image2" src={CITi} alt=""/> </Slide>
-				<Slide> <img id="image3" src={LogoCITi} alt=""/> </Slide>
-			 
-			</Slides>
+			<SliderButton onClick={() => swiperRef.current?.slideNext()}>
+				<FaChevronRight size={25}/>
+			</SliderButton>
 
-			<SlideBar>
-
-				<input type="radio" id="btn1"/>		
-				<input type="radio" id="btn2"/>
-				<input type="radio" id="btn3"/>
-
-				<Bar htmlFor="btn1"></Bar>
-				<Bar htmlFor="btn2"></Bar>
-				<Bar htmlFor="btn3"></Bar>
-
-			</SlideBar>
-
-		</SlidesContainer>
-
-	</SliderContainer>
-)
+		</Box>
+	)
+}

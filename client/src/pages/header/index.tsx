@@ -11,10 +11,10 @@ export const Header: React.FC = () => {
                 </Text3>
                 <ScrollImage src={ScrollDown} alt=""/>
             </HeaderContainer>
-            <MeetDurbetonContainer>
+            <MeetDurbetonContainer id="aboutus">
                 <Text1>
                     <MeetUs>
-                        Conheça a Durbeton!
+                        Conheça a <p>Durbeton!</p>
                     </MeetUs>
                     <Text2>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

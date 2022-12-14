@@ -5,7 +5,7 @@ import { Enviar } from "../../assets"
 export const Form: React.ElementType= () => {
     return (  
 
-        <Container>
+        <Container id="contact">
             <FormContainer>
                 <Title>Ficou interessado?<br/>Fale conosco!</Title>
                 <Info>
