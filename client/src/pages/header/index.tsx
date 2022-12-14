@@ -5,7 +5,7 @@ import { Overlay, ScrollDown } from '../../assets';
 export const Header: React.FC = () => {
     return (
         <Container>
-            <HeaderContainer>
+            <HeaderContainer id="home">
                 <Text3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </Text3>
@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
             <MeetDurbetonContainer id="aboutus">
                 <Text1>
                     <MeetUs>
-                        Conheça a <p>Durbeton!</p>
+                        Conheça a Durbeton!
                     </MeetUs>
                     <Text2>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

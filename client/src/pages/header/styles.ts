@@ -54,7 +54,7 @@ export const MeetDurbetonContainer = styled.div`
 `;
 
 export const MeetUs = styled.p`
-    width: 27.5vw;
+    width: 85%;
 
     font-family: 'Anybody';
     font-style: normal;
