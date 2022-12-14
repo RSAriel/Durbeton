@@ -5,23 +5,18 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Swiper as SwiperCore} from 'swiper/types';
+import 'swiper/css/pagination';
 
 import { Box, Slide, SliderButton } from "./styles";
-import { LogoCITi, SliderImage } from "../../assets";
+import { SliderImage } from "../../assets";
+import { Pagination } from "swiper";
 
- 
-type SliderProps = {
-	slide1: URL;
-	slide2: URL;
-	slide3: URL;
-}
 
-export const SliderComponent : React.ElementType= ({slide1, slide2, slide3}: SliderProps) => {
+export const SliderComponent : React.ElementType= () => {
 
 	const swiperRef = React.useRef<SwiperCore>();
 
-	const [number, setNumber] = useState(1);
-
+	/*const [number, setNumber] = useState(1);
 	
 	const prevSlide = () => {
 		if (number > 1){
@@ -37,7 +32,7 @@ export const SliderComponent : React.ElementType= ({slide1, slide2, slide3}: Sli
 		} else {
 			setNumber(3);
 		}
-	}
+	}*/
 	
 
 
@@ -49,16 +44,18 @@ export const SliderComponent : React.ElementType= ({slide1, slide2, slide3}: Sli
 			
 			
 			<Swiper
+				modules={[Pagination]}
 				spaceBetween={10}
 				slidesPerView={1}
+				pagination={{ clickable: true }}
 				onBeforeInit={(swiper) =>{
 					swiperRef.current = swiper;
 				}}
 			>
 			
-			<SwiperSlide> <Slide src={LogoCITi} alt="" /> </SwiperSlide>
 			<SwiperSlide> <Slide src={SliderImage} alt="" /> </SwiperSlide>
-			<SwiperSlide> <Slide src={LogoCITi} alt="" /> </SwiperSlide>
+			<SwiperSlide> <Slide src={SliderImage} alt="" /> </SwiperSlide>
+			<SwiperSlide> <Slide src={SliderImage} alt="" /> </SwiperSlide>
 			</Swiper>
 
 			<SliderButton onClick={() => swiperRef.current?.slideNext()}>
@@ -68,4 +65,3 @@ export const SliderComponent : React.ElementType= ({slide1, slide2, slide3}: Sli
 		</Box>
 	)
 }
-
