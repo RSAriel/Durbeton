@@ -8,7 +8,7 @@ import { RightArrow } from '../../assets';
 export const Navbar: React.FC = () => {
     return (
         <NavbarContainer >
-            <Name id="home">
+            <Name>
                 durbeton
             </Name>
             <PageSections className="menu">
