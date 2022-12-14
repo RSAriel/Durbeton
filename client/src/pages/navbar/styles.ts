@@ -4,13 +4,17 @@ import styled from 'styled-components';
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 11.7vh;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
     
     padding-top: 3.5vh;
     padding-left: 8.5vw;
     padding-right:8.5vw;
     padding-bottom: 3.5vh;
 
-    background-color: #185392E5;
+    background-color: rgba(24, 83, 146, 1);
 
     display: flex;
     flex-direction: row;
@@ -32,6 +36,7 @@ export const Name = styled.p`
     font-weight: 700;
     font-size: 4vh;
     line-height:4.3vh;
+    text-transform: uppercase;
 
     color: #FFFFFF;
 `;
@@ -39,15 +44,26 @@ export const Name = styled.p`
 export const PageSections = styled.div`
     width: 45vw;
     
-    display: flex;
-    justify-content: space-around;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        list-style: none;
+    }
 `;
 
 export const Contact = styled.div`
     width: 11vw;
     
-    display: flex;
-    justify-content: space-between;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        list-style: none;
+    }
+    
 `;
 
 export const Arrow = styled.img`
@@ -65,10 +81,8 @@ export const Sec = styled.a`
     
     color: #FFFFFF;
     font-style: normal;
+    text-decoration: none;
 
-    :link{
-        text-decoration: none;
-    }
 
     :hover{
         text-decoration: underline;

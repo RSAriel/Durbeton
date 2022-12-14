@@ -55,7 +55,6 @@ export const MeetDurbetonContainer = styled.div`
 
 export const MeetUs = styled.p`
     width: 27.5vw;
-    //margin-top: 8.8vh;
 
     font-family: 'Anybody';
     font-style: normal;

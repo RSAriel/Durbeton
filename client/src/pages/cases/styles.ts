@@ -6,15 +6,15 @@ export const CasesContainer = styled.div`
 	height: 76.9vh;
 
 	padding-top: 10.9vh;
-	padding-left: 7.3vw;
-	padding-right:3.4vw;
+	padding-left: 6%;
+	padding-right:3%;
 	padding-bottom: 6.8vh;
 
 	background-color: #FDFDFD;
 	
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-content: center;
 	align-items: center;
 `;

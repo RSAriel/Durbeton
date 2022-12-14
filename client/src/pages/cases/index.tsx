@@ -1,11 +1,11 @@
 import React from "react";
 import { Bar, CasesContainer, OurCases, OurCasesContainer, Text } from './styles';
 import { SliderImage } from '../../assets';
-import { Slider } from "../../components";
+import { SliderComponent } from "../../components";
 
 export const Cases: React.FC = () => {
   return (
-    <CasesContainer>
+    <CasesContainer id="portfolio">
       <OurCasesContainer>
 				<Bar> </Bar>
 				<OurCases> Nossas Cases </OurCases>
@@ -14,7 +14,7 @@ export const Cases: React.FC = () => {
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod. 
 				</Text>
 			</OurCasesContainer>
-			<Slider/>
+			<SliderComponent/>
     </CasesContainer>
   );
 }
