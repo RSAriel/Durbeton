@@ -3,30 +3,28 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-
-    padding-top: 52px;
-
+    height: 76.9vh;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     align-items: center;
+
+    padding-top: 8.7vh;
+    margin-bottom: 5.3%;
+
+    @media (min-height: 700px) {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+        height: auto;
+
+    }
 `;
 
-export const ServicesContainer = styled.section `
-
-    width: 100%;
-    height: 558px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    position: relative;
-`;
 
 export const Bar = styled.div`
-	width: 37vh;
+	width: 18em;
 	height: 4px;
 	margin-bottom: 16px;
 	background-color: #185392;
@@ -35,7 +33,7 @@ export const Bar = styled.div`
 
 export const Title = styled.h1 `
     font-family: Anybody;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: 0em;
@@ -44,11 +42,32 @@ export const Title = styled.h1 `
 
 `;
 
-export const Boxes = styled.div `
+export const ServicesContainer = styled.div `
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    aligh-items: center;
+    justify-content: space-around;
+
+    padding: 5.4% 10% 0 10%;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+`;
+
+
+/* export const Boxes = styled.div `
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-left: 7vw;
     margin-right: 7vw;
 
-`;
+`; */
