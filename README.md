@@ -1,6 +1,8 @@
 This was my first React Project, a Front-End challenge from my University's Junior Company (managed by students only). To run the code just do:   npm install && npm start on the ./client folder. 
 
-Ignore all below, is the boilerplate from the company
+Ignore all below, its the boilerplate from the company
+
+
 
 
 
